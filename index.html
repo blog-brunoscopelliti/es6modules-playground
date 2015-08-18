@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jspm playground</title>
+</head>
+<body>
+    <em>view the javascript console</em>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+
+    <script>
+
+        System.import('./index').then(function(module) {
+            console.log(module.default([1,2,3,4,5])); // [4,16]
+        });
+
+    </script>
+
+</body>
+</html>
